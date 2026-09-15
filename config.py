@@ -49,4 +49,4 @@ STATE_FILE = "state.json"
 LOG_FILE = "monitor.log"
 
 # هل تريد تشغيل المتصفح في وضع مرئي؟ (للتشخيص)
-HEADLESS = False
+HEADLESS = True
