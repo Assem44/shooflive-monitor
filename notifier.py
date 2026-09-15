@@ -3,7 +3,8 @@
 """
 
 import requests
-from config import BOT_TOKEN, CHAT_ID
+from config import BOT_TOKEN, CHAT_ID, CLEANUP_DAYS
+
 import logging
 
 logger = logging.getLogger(__name__)
