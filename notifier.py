@@ -83,3 +83,24 @@ def notify_startup():
     """إشعار بدء تشغيل النظام"""
     message = "🚀 <b>تم تشغيل النظام</b>"
     return send_telegram(message)
+
+
+def send_video_to_telegram(file_path, episode_num, caption=""):
+    """يرفع فيديو على تيليجرام"""
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendVideo"
+    
+    try:
+        with open(file_path, 'rb') as video_file:
+            files = {'video': video_file}
+            data = {
+                'chat_id': CHAT_ID,
+                'caption': caption or f"🎬 الحلقة {episode_num}",
+                'supports_streaming': True
+            }
+            response = requests.post(url, files=files, data=data, timeout=300)
+            response.raise_for_status()
+            result = response.json()
+            return result.get('ok', False)
+    except Exception as e:
+        logger.error(f"❌ فشل رفع الفيديو على تيليجرام: {e}")
+        return False
