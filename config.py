@@ -4,7 +4,7 @@
 """
 
 # ================== إعدادات تيليجرام ==================
-BOT_TOKEN = "8920640316:AAFnvDBiEvTTc83_VfhsBS9lHnRb7oSF4x4"        # التوكن من @BotFather
+BOT_TOKEN = "8920640316:AAGmrZ55-X1fvNqi6t_kc4JJBnddjMEI21Q"        # التوكن من @BotFather
 CHAT_ID = "7218632889"       # الـ Chat ID بتاعك
 # إعدادات إضافية
 SEND_VIDEO_TO_TELEGRAM = True   # ارفع الفيديو على تيليجرام
