@@ -2,12 +2,21 @@
 الإعدادات العامة للنظام
 عدّل القيم دي حسب احتياجك
 """
-
+import os
 # ================== إعدادات تيليجرام ==================
-BOT_TOKEN = "8920640316:AAGmrZ55-X1fvNqi6t_kc4JJBnddjMEI21Q"        # التوكن من @BotFather
-CHAT_ID = "7218632889"       # الـ Chat ID بتاعك
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")       # التوكن من @BotFather
+CHAT_ID = os.environ.get("CHAT_ID", "")       # الـ Chat ID بتاعك
 # إعدادات إضافية
-SEND_VIDEO_TO_TELEGRAM = True   # ارفع الفيديو على تيليجرام
+SEND_VIDEO_TO_TELEGRAM = False   # ارفع الفيديو على تيليجرام
+
+
+# ================== إعدادات GitHub ==================
+GITHUB_USERNAME = "Assem44"
+GITHUB_REPO = "shooflive-monitor"
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+UPLOAD_TO_GITHUB = True
+CLEANUP_DAYS = 14
+
 
 # ================== إعدادات المراقبة ==================
 # رابط المسلسل في shooflive.net
