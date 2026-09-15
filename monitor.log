@@ -1,0 +1,348 @@
+[2026-09-14 20:59:22] INFO - ============================================================
+[2026-09-14 20:59:22] INFO - 🚀 بدء فحص الحلقات الجديدة
+[2026-09-14 20:59:22] ERROR - ⚠️ خطأ في قراءة الحالة: Expecting value: line 1 column 1 (char 0)
+[2026-09-14 20:59:22] INFO - 📌 آخر حلقة محفوظة: 0 (إعلان: False)
+[2026-09-14 20:59:24] ERROR - ❌ خطأ غير متوقع: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Traceback (most recent call last):
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 159, in main
+    asyncio.run(check_for_new_episode())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 75, in check_for_new_episode
+    episodes = await get_episodes()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\scraper.py", line 31, in get_episodes
+    browser = await p.chromium.launch(headless=HEADLESS)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\async_api\_generated.py", line 16731, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_browser_type.py", line 97, in launch
+    await self._channel.send(
+        "launch", TimeoutSettings.launch_timeout, params
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+[2026-09-14 20:59:28] ERROR - ❌ خطأ في الاتصال بتيليجرام: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8920640316:AAFnvDBiEvTTc83_VfhsBS9lHnRb7oSF4x4/sendMessage (Caused by ProxyError('Unable to connect to proxy', NewConnectionError("HTTPSConnection(host='192.168.1.5', port=8080): Failed to establish a new connection: [WinError 10053] An established connection was aborted by the software in your host machine")))
+[2026-09-15 13:54:01] INFO - ============================================================
+[2026-09-15 13:54:01] INFO - 🚀 بدء فحص الحلقات الجديدة
+[2026-09-15 13:54:01] ERROR - ⚠️ خطأ في قراءة الحالة: Expecting value: line 1 column 1 (char 0)
+[2026-09-15 13:54:01] INFO - 📌 آخر حلقة محفوظة: 0 (إعلان: False)
+[2026-09-15 13:54:02] ERROR - ❌ خطأ غير متوقع: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Traceback (most recent call last):
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 159, in main
+    asyncio.run(check_for_new_episode())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 75, in check_for_new_episode
+    episodes = await get_episodes()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\scraper.py", line 31, in get_episodes
+    browser = await p.chromium.launch(headless=HEADLESS)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\async_api\_generated.py", line 16731, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_browser_type.py", line 97, in launch
+    await self._channel.send(
+        "launch", TimeoutSettings.launch_timeout, params
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+[2026-09-15 13:54:03] ERROR - ❌ خطأ في الاتصال بتيليجرام: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8920640316:AAFnvDBiEvTTc83_VfhsBS9lHnRb7oSF4x4/sendMessage
+[2026-09-15 14:20:10] INFO - ============================================================
+[2026-09-15 14:20:10] INFO - 🚀 بدء فحص الحلقات الجديدة
+[2026-09-15 14:20:10] ERROR - ⚠️ خطأ في قراءة الحالة: Expecting value: line 1 column 1 (char 0)
+[2026-09-15 14:20:10] INFO - 📌 آخر حلقة محفوظة: 0 (إعلان: False)
+[2026-09-15 14:20:11] ERROR - ❌ خطأ غير متوقع: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Traceback (most recent call last):
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 159, in main
+    asyncio.run(check_for_new_episode())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 75, in check_for_new_episode
+    episodes = await get_episodes()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\scraper.py", line 31, in get_episodes
+    browser = await p.chromium.launch(headless=HEADLESS)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\async_api\_generated.py", line 16731, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_browser_type.py", line 97, in launch
+    await self._channel.send(
+        "launch", TimeoutSettings.launch_timeout, params
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+[2026-09-15 14:20:12] ERROR - ❌ خطأ في الاتصال بتيليجرام: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8920640316:AAFnvDBiEvTTc83_VfhsBS9lHnRb7oSF4x4/sendMessage
+[2026-09-15 14:20:46] INFO - ============================================================
+[2026-09-15 14:20:46] INFO - 🚀 بدء فحص الحلقات الجديدة
+[2026-09-15 14:20:46] ERROR - ⚠️ خطأ في قراءة الحالة: Expecting value: line 1 column 1 (char 0)
+[2026-09-15 14:20:46] INFO - 📌 آخر حلقة محفوظة: 0 (إعلان: False)
+[2026-09-15 14:20:47] ERROR - ❌ خطأ غير متوقع: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Traceback (most recent call last):
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 159, in main
+    asyncio.run(check_for_new_episode())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 75, in check_for_new_episode
+    episodes = await get_episodes()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\scraper.py", line 31, in get_episodes
+    browser = await p.chromium.launch(headless=HEADLESS)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\async_api\_generated.py", line 16731, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_browser_type.py", line 97, in launch
+    await self._channel.send(
+        "launch", TimeoutSettings.launch_timeout, params
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+[2026-09-15 14:20:48] ERROR - ❌ خطأ في الاتصال بتيليجرام: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8920640316:AAFnvDBiEvTTc83_VfhsBS9lHnRb7oSF4x4/sendMessage
+[2026-09-15 14:23:05] INFO - ============================================================
+[2026-09-15 14:23:05] INFO - 🚀 بدء فحص الحلقات الجديدة
+[2026-09-15 14:23:05] ERROR - ⚠️ خطأ في قراءة الحالة: Expecting value: line 1 column 1 (char 0)
+[2026-09-15 14:23:05] INFO - 📌 آخر حلقة محفوظة: 0 (إعلان: False)
+[2026-09-15 14:23:06] ERROR - ❌ خطأ غير متوقع: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Traceback (most recent call last):
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 159, in main
+    asyncio.run(check_for_new_episode())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\main.py", line 75, in check_for_new_episode
+    episodes = await get_episodes()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\3mmar\shoof\scraper.py", line 31, in get_episodes
+    browser = await p.chromium.launch(headless=HEADLESS)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\async_api\_generated.py", line 16731, in launch
+    await self._impl_obj.launch(
+    ...<17 lines>...
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_browser_type.py", line 97, in launch
+    await self._channel.send(
+        "launch", TimeoutSettings.launch_timeout, params
+    )
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at C:\Users\Dell\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+[2026-09-15 14:23:07] ERROR - ❌ خطأ في الاتصال بتيليجرام: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8920640316:AAFnvDBiEvTTc83_VfhsBS9lHnRb7oSF4x4/sendMessage
+[2026-09-15 14:23:42] INFO - ============================================================
+[2026-09-15 14:23:42] INFO - 🚀 بدء فحص الحلقات الجديدة
+[2026-09-15 14:23:42] ERROR - ⚠️ خطأ في قراءة الحالة: Expecting value: line 1 column 1 (char 0)
+[2026-09-15 14:23:42] INFO - 📌 آخر حلقة محفوظة: 0 (إعلان: False)
+[2026-09-15 14:23:54] INFO - 🌐 فتح صفحة المسلسل: https://shooflive.net/series/مسلسل-إسطنبول-رأساً-على-عقب/
+[2026-09-15 14:24:00] INFO - 📺 تم العثور على 14 حلقة
+[2026-09-15 14:24:00] INFO - 🆕 أحدث حلقة: 14 (متاحة)
+[2026-09-15 14:24:01] INFO - 🆕 أحدث حلقة: 14 - متاحة
+[2026-09-15 14:24:01] INFO - 📌 أول تشغيل: حفظ الحالة فقط بدون إشعار
+[2026-09-15 14:35:06] INFO - ============================================================
+[2026-09-15 14:35:06] INFO - 🚀 بدء فحص الحلقات الجديدة
+[2026-09-15 14:35:06] INFO - 📌 آخر حلقة محفوظة: 14 (إعلان: False)
+[2026-09-15 14:35:08] INFO - 🌐 فتح صفحة المسلسل: https://shooflive.net/series/مسلسل-إسطنبول-رأساً-على-عقب/
+[2026-09-15 14:35:16] INFO - 📺 تم العثور على 14 حلقة
+[2026-09-15 14:35:16] INFO - 🆕 أحدث حلقة: 14 (متاحة)
+[2026-09-15 14:35:17] INFO - 🆕 أحدث حلقة: 14 - متاحة
+[2026-09-15 14:35:17] INFO - ✅ مفيش جديد
+[2026-09-15 14:37:32] INFO - ============================================================
+[2026-09-15 14:37:32] INFO - 🚀 بدء فحص الحلقات الجديدة
+[2026-09-15 14:37:32] INFO - 📌 آخر حلقة محفوظة: 13 (إعلان: False)
+[2026-09-15 14:37:35] INFO - 🌐 فتح صفحة المسلسل: https://shooflive.net/series/مسلسل-إسطنبول-رأساً-على-عقب/
+[2026-09-15 14:37:40] INFO - 📺 تم العثور على 14 حلقة
+[2026-09-15 14:37:40] INFO - 🆕 أحدث حلقة: 14 (متاحة)
+[2026-09-15 14:37:41] INFO - 🆕 أحدث حلقة: 14 - متاحة
+[2026-09-15 14:37:41] INFO - 🎉 حلقة جديدة! 13 → 14
+[2026-09-15 14:37:41] INFO - 🎬 استخراج رابط الفيديو...
+[2026-09-15 14:37:41] INFO - 🎬 محاولة 1/3 لاستخراج الفيديو
+[2026-09-15 14:37:43] INFO - 📄 فتح صفحة الحلقة: https://shooflive.net/episode/%d9%85%d8%b3%d9%84%d8%b3%d9%84-%d8%a5%d8%b3%d8%b7%d9%86%d8%a8%d9%88%d9%84-%d8%b1%d8%a3%d8%b3%d8%a7%d9%8b-%d8%b9%d9%84%d9%89-%d8%b9%d9%82%d8%a8-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-14-%d9%85%d8%aa/
+[2026-09-15 14:37:46] INFO - 🔗 iframe 1: https://dilaymotion.cam/albaplayer/alti-ustu-istanbul-2026-s01e14
+[2026-09-15 14:37:47] INFO - 📄 فتح dilaymotion: https://dilaymotion.cam/albaplayer/alti-ustu-istanbul-2026-s01e14?serv=1
+[2026-09-15 14:37:50] INFO - 🔗 iframe 2: https://cdnplus.space/embed-bwbrdod6xc6h.html
+[2026-09-15 14:37:50] INFO - 📄 فتح cdnplus: https://cdnplus.space/embed-bwbrdod6xc6h.html
+[2026-09-15 14:37:54] INFO - ✅ jwplayer أعطى الرابط
+[2026-09-15 14:37:55] INFO - ✅ تم استخراج الرابط: https://cdn2-lkm.brqz.online/hls2/01/00006/bwbrdod6xc6h_,l,n,h,x,.urlset/master....
+[2026-09-15 14:37:55] INFO - ✅ تم إرسال الإشعار بنجاح
+[2026-09-15 14:37:55] INFO - ✅ اكتمل الفحص
+[2026-09-15 14:41:25] INFO - ============================================================
+[2026-09-15 14:41:25] INFO - 🚀 بدء فحص الحلقات الجديدة
+[2026-09-15 14:41:25] INFO - 📌 آخر حلقة محفوظة: 13 (إعلان: False)
+[2026-09-15 14:41:27] INFO - 🌐 فتح صفحة المسلسل: https://shooflive.net/series/مسلسل-إسطنبول-رأساً-على-عقب/
+[2026-09-15 14:41:35] INFO - 📺 تم العثور على 14 حلقة
+[2026-09-15 14:41:35] INFO - 🆕 أحدث حلقة: 14 (متاحة)
+[2026-09-15 14:41:35] INFO - 🆕 أحدث حلقة: 14 - متاحة
+[2026-09-15 14:41:35] INFO - 🎉 حلقة جديدة! 13 → 14
+[2026-09-15 14:41:35] INFO - 🎬 استخراج رابط الفيديو...
+[2026-09-15 14:41:35] INFO - 🎬 محاولة 1/3 لاستخراج الفيديو
+[2026-09-15 14:41:37] INFO - 📄 فتح صفحة الحلقة: https://shooflive.net/episode/%d9%85%d8%b3%d9%84%d8%b3%d9%84-%d8%a5%d8%b3%d8%b7%d9%86%d8%a8%d9%88%d9%84-%d8%b1%d8%a3%d8%b3%d8%a7%d9%8b-%d8%b9%d9%84%d9%89-%d8%b9%d9%82%d8%a8-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-14-%d9%85%d8%aa/
+[2026-09-15 14:41:41] INFO - 🔗 iframe 1: https://dilaymotion.cam/albaplayer/alti-ustu-istanbul-2026-s01e14
+[2026-09-15 14:41:41] INFO - 📄 فتح dilaymotion: https://dilaymotion.cam/albaplayer/alti-ustu-istanbul-2026-s01e14?serv=1
+[2026-09-15 14:41:45] INFO - 🔗 iframe 2: https://cdnplus.space/embed-bwbrdod6xc6h.html
+[2026-09-15 14:41:45] INFO - 📄 فتح cdnplus: https://cdnplus.space/embed-bwbrdod6xc6h.html
+[2026-09-15 14:41:51] INFO - ✅ jwplayer أعطى الرابط
+[2026-09-15 14:41:52] INFO - ✅ تم استخراج الرابط: https://cdn2-lkm.brqz.online/hls2/01/00006/bwbrdod6xc6h_,l,n,h,x,.urlset/master....
+[2026-09-15 14:41:53] INFO - ✅ تم إرسال الإشعار بنجاح
+[2026-09-15 14:41:53] INFO - ⬇️ بدء التحميل بجودة 480...
+[2026-09-15 14:41:53] INFO - 📁 المسار: C:\Users\Dell\Desktop\Estanpool
+[2026-09-15 14:54:58] INFO - ✅ تم التحميل: C:\Users\Dell\Desktop\Estanpool\مسلسل_إسطنبول_رأساً_على_عقب_E14.mp4
+[2026-09-15 14:54:58] INFO - ✅ اكتمل الفحص

@@ -1,0 +1,14 @@
+{
+  "last_episode_num": 14,
+  "last_episode_url": "https://shooflive.net/episode/%d9%85%d8%b3%d9%84%d8%b3%d9%84-%d8%a5%d8%b3%d8%b7%d9%86%d8%a8%d9%88%d9%84-%d8%b1%d8%a3%d8%b3%d8%a7%d9%8b-%d8%b9%d9%84%d9%89-%d8%b9%d9%82%d8%a8-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-14-%d9%85%d8%aa/",
+  "last_check": "2026-09-15T14:54:58.361296",
+  "processed_episodes": [
+    {
+      "num": 14,
+      "url": "https://shooflive.net/episode/%d9%85%d8%b3%d9%84%d8%b3%d9%84-%d8%a5%d8%b3%d8%b7%d9%86%d8%a8%d9%88%d9%84-%d8%b1%d8%a3%d8%b3%d8%a7%d9%8b-%d8%b9%d9%84%d9%89-%d8%b9%d9%82%d8%a8-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-14-%d9%85%d8%aa/",
+      "video_url": "https://cdn2-lkm.brqz.online/hls2/01/00006/bwbrdod6xc6h_,l,n,h,x,.urlset/master.m3u8?t=v8P3Ogud02moFxH40whUMQQhG2xy5nXSUTlycsLplhk&s=1789472505&e=43200&v=302238164&srv=enc2-lfm&i=0.0&sp=0",
+      "date": "2026-09-15T14:54:58.361266"
+    }
+  ],
+  "last_was_ad": false
+}
