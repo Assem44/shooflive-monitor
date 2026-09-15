@@ -69,7 +69,19 @@ def download_video(video_url, episode_num, series_name):
                 if f.startswith(f"{safe_name}_E{episode_num:02d}"):
                     filepath = os.path.join(DOWNLOAD_DIR, f)
                     logger.info(f"✅ تم التحميل: {filepath}")
-
+                    # ارفع على تيليجرام لو مفعّل
+                    if SEND_VIDEO_TO_TELEGRAM:
+                        from notifier import send_video_to_telegram
+                        logger.info("📤 جاري رفع الفيديو على تيليجرام...")
+                        success = send_video_to_telegram(
+                            file_path=filepath,
+                            episode_num=episode_num,
+                            caption=f"🎬 {series_name} - الحلقة {episode_num}"
+                        )
+                        if success:
+                            logger.info("✅ تم رفع الفيديو على تيليجرام")
+                        else:
+                            logger.warning("⚠️ فشل رفع الفيديو على تيليجرام")
                     try:
                         file_size = os.path.getsize(filepath)
                         size_mb = file_size / (1024 * 1024)
