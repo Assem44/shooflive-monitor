@@ -18,6 +18,7 @@ from downloader import download_video
 from notifier import (
     notify_new_episode, notify_error, notify_startup, send_telegram
 )
+from cleanup import cleanup_old_releases
 
 import logging
 
@@ -151,6 +152,11 @@ async def check_for_new_episode():
     state["processed_episodes"] = processed[-50:]
     
     save_state(state)
+
+        # ========== التنظيف التلقائي ==========
+    logger.info("🧹 فحص الحلقات القديمة للحذف...")
+    cleanup_old_releases()
+    
     logger.info("✅ اكتمل الفحص")
 
 # ================== نقطة البداية ==================
