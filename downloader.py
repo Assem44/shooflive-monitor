@@ -6,7 +6,7 @@ import subprocess
 import os
 from pathlib import Path
 from config import (
-DOWNLOAD_DIR, DOWNLOAD_QUALITY, SEND_VIDEO_TO_TELEGERAM
+DOWNLOAD_DIR, DOWNLOAD_QUALITY, SEND_VIDEO_TO_TELEGRAM
 )
 import logging
 from notifier import send_telegram
