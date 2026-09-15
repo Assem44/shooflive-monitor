@@ -104,3 +104,14 @@ def send_video_to_telegram(file_path, episode_num, caption=""):
     except Exception as e:
         logger.error(f"❌ فشل رفع الفيديو على تيليجرام: {e}")
         return False
+
+def notify_github_release(episode_num, series_name, download_url):
+    """يبعت رابط التحميل من GitHub Releases"""
+    message = (
+        f"🎬 <b>حلقة جديدة نزلت!</b>\n\n"
+        f"📺 <b>{series_name}</b>\n"
+        f"🎞️ <b>الحلقة {episode_num}</b>\n\n"
+        f"⬇️ <a href='{download_url}'>تحميل مباشر من GitHub</a>\n\n"
+        f"⏳ <i>الرابط صالح لمدة {CLEANUP_DAYS} يوم</i>"
+    )
+    return send_telegram(message)
