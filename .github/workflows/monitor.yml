@@ -2,8 +2,8 @@ name: Shooflive Monitor
 
 on:
   schedule:
-    - cron: '0 21 * * 1'
-  
+    - cron: '40 23 * * 1'
+      timezone: "Africa/Cairo"
   workflow_dispatch:
 
 jobs:
